@@ -3,7 +3,7 @@ MAINTAINER Marco Monteiro <marco@neniu.org>
 
 EXPOSE 80
 
-RUN pacman -Sy  --needed --noconfirm --noprogressbar \
+RUN pacman -Sq --needed --noconfirm --noprogressbar \
            ghostscript \
            imagemagick \
            ffmpeg \
@@ -14,4 +14,6 @@ RUN pacman -Sy  --needed --noconfirm --noprogressbar \
            pdfsam \
            pdftk \
            poppler \
-           ttf-dejavu
+           ttf-dejavu && \
+    yes | pacman -Sqcc && \
+    rm -rf /usr/share/man/*
