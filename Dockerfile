@@ -3,7 +3,7 @@ MAINTAINER Marco Monteiro <marco@neniu.org>
 
 EXPOSE 80
 
-RUN pacman -Sq --needed --noconfirm --noprogressbar \
+RUN pacman -Sqy --needed --noconfirm --noprogressbar \
            ghostscript \
            imagemagick \
            ffmpeg \

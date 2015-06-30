@@ -1,6 +1,6 @@
 # docker-inductonline
 
-> An image built from `masm/archlinux`
+> An image built from `masm/nodejs`
 
 ## License
 
