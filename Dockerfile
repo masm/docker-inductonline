@@ -14,6 +14,7 @@ RUN pacman -Sqy --needed --noconfirm --noprogressbar \
            pdfsam \
            pdftk \
            poppler \
-           ttf-dejavu && \
+           ttf-dejavu \
+           unoconv && \
     yes | pacman -Sqcc && \
     rm -rf /usr/share/man/*
